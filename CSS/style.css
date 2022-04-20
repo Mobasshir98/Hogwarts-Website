@@ -109,8 +109,8 @@ p{
 }
 .col{
     flex-basis: 31%;
-    background: rgba(226, 195, 116, 0.699);
-    border-radius: 10px;
+    background: #f2f2f2;
+    /* border-radius: 10px; */
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
@@ -165,8 +165,8 @@ h3{
     display: flex;
     margin: 10px;
     padding: 20px;
-    background: rgba(190, 138, 17, 0.178);
-    border-radius: 20px;
+    background: #f2f2f2;
+    /* border-radius: 20px; */
     transition: 0.5s;
     box-sizing: border-box;
 }
@@ -360,7 +360,7 @@ h3{
     }
     .campusrow img{
         height: 340px;
-        border-radius: 8px;
+        border-radius: 0px;
     }
     .campus p{
         margin-bottom: 15px;
@@ -375,6 +375,14 @@ h3{
        width: 100%;
        margin: 20px 0px;
        border-radius: 0;
+    }
+    .course .col{
+        filter: drop-shadow(0 0 6px black);
+        background: #f2f2f2;
+    }
+    .testcol{
+        filter: drop-shadow(0 0 6px black);
+        background: #f2f2f2;
     }
 }
 
