@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
 }
 #logo{
     width: 90px;
@@ -73,7 +73,7 @@ nav ul li:hover::after{
     font-size: 14px;
     background: transparent;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 .visit-btn:hover{
     border: 1px solid goldenrod;
@@ -87,6 +87,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    margin-bottom: 100px;
 }
 .course h1{
     margin-bottom: 30px;
@@ -310,6 +311,53 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.thank{
+    background-image: linear-gradient(rgba(36, 21, 21, 0.742),rgba(36, 21, 21, 0.742)),url("../Images/thank.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.thank h1{
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 0 0 30px gold;
+}
+.thank div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.courserow{
+    display: flex;
+    flex-direction: column;
+}
+.courses-subrow{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.coursecol{
+    flex-basis: 45%;
+    margin-bottom: 25px;
+}
+.courserow img{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.cont{
+    text-align: center;
+    padding: 20px;
+}
+.cont p{
+    margin-bottom: 30px;
+}
+
 @media(max-width: 820px) {
     #logo{
         width: 60px;
@@ -384,5 +432,16 @@ h3{
         filter: drop-shadow(0 0 6px black);
         background: #f2f2f2;
     }
+    .thank h1{
+        font-size: 20px;
+    }
+    .courses-subrow{
+        flex-direction: column;
+        width: 100%;
+    }
+    .courserow img{
+        padding: 0;
+    }
+  
 }
 
